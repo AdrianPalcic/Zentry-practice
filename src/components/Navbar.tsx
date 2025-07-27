@@ -65,10 +65,10 @@ const Navbar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
+      className="fixed inset-x-0 top-8 z-50 px-4 border-none transition-all duration-700 min-w-[0px] "
     >
-      <header className="absolute top-1/2 w-full -translate-y-1/2">
-        <nav className="flex size-full items-center justify-between p-4">
+      <header className="absolute top-1/2 w-full -translate-y-1/2  min-w-[0px]">
+        <nav className="flex flex-wrap w-full items-center justify-between p-4  min-w-[0px]">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
             <img src="/img/logo.png" alt="logo" className="w-10" />
@@ -97,7 +97,7 @@ const Navbar = () => {
 
             <button
               onClick={toggleAudioIndicator}
-              className="ml-10 flex items-center space-x-0.5"
+              className="ml-4 sm:ml-10 flex items-center space-x-0.5"
             >
               <audio
                 ref={audioElementRef}

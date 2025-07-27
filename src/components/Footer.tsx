@@ -8,7 +8,7 @@ const Footer = () => {
     Zentry
   </h1>
 </div>    
-   <p>©Zentry 2024. All rights reserved</p>
+   <p>©Nova 2024. All rights reserved</p>
     </footer>
   );
 };
